@@ -1,11 +1,17 @@
-# 1 criando uma classe em python
-class Restaurante:
-    nome=''
-    categoria=''
-    ativo=False
+# 1 criando uma classe usando construtor
 
-restaurante_praca=Restaurante()
-restaurante_praca.nome='Bistrô'
+class Restaurante:
+    def __init__(self, nome, categoria):
+        self.nome = nome
+        self.categoria = categoria
+        self.ativo = False
+        
+        def __STR__(self):
+            #return self.nome
+            return f'{self.nome}' | {self.categoria} | {self.ativo}
+
+restaurante_praca = Restaurante()
+restaurante_praca = Restaurante ('Praça', 'Gourmet')
 restaurante_praca.categoria='Italiana'
 restaurante_praca.ativo="ativo" if restaurante_praca.ativo else "inativo"
 
@@ -23,3 +29,5 @@ restaurantes=[restaurante_praca,restaurante_pizza]
 print(dir(restaurante_praca))
 print('')
 print(vars(restaurante_praca))
+print('')
+print(restaurante_praca)
