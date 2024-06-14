@@ -51,4 +51,3 @@ cliente3 = Cliente('Maria Jacomasso', 'maria.jacomasso@escola.pr.gov.br', '5555-
 print(cliente1)
 print(cliente2)
 print(cliente3)
-
